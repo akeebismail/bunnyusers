@@ -7,6 +7,7 @@ You  need to have a working  ^node on your machine.
 #### User service installation
 In the project directory
 Run
+
 `$ cd users`
 
 In the user directory run
@@ -32,6 +33,7 @@ visit http://localhost:5000 to consume the api
 #### Task service installation
 In the tasks directory
 Run
+
 `$ cd tasks`
 
 `$ cp .env.example .env`
@@ -55,6 +57,7 @@ visit http://localhost:5001 to consume the api
 #### todo UI Installation
 In the project directory
 Run
+
 `$ cd client`
 
 
