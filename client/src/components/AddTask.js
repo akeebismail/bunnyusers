@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { useSelectedUserValue } from '../context';
 import { UserOverlay } from './UserOverlay';
 import { TaskDate } from './TaskDate';
+import config from '../config/index'
 
 export const AddTask = ({
                             showAddTaskMain = true,
@@ -35,7 +36,7 @@ export const AddTask = ({
         return (
             task &&
             projectId &&
-            fetch('http://localhost:5001/tasks/add-task', {
+            fetch(`${config.taskAPI}/tasks/add-task`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

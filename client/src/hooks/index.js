@@ -1,5 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import { useState, useEffect } from 'react';
+import config from '../config'
 import moment from 'moment';
 import { collatedTasksExist } from '../helpers';
 
@@ -9,7 +10,7 @@ export const useTasks = selectedUser => {
   const [archivedTasks, setArchivedTasks] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5001/tasks/${selectedUser}/user`).then(response => response.json()).then(res => {
+    fetch(`${config.taskAPI}/tasks/${selectedUser}/user`).then(response => response.json()).then(res => {
       setTasks(res.data)
     })
     return () => {};
@@ -23,7 +24,7 @@ export const useUsers = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/use').then(response => response.json())
+    fetch(`${config.userAPI}/users`).then(response => response.json())
         .then(res => {
 
           if (res.success) {

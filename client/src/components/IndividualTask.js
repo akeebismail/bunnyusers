@@ -2,15 +2,14 @@ import React, { useState } from 'react';
 import { FaTrashAlt } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import { useUsersValue, useSelectedUserValue } from '../context';
-
+import config from '../config'
 export const IndividualTask = ({ user }) => {
   const [showConfirm, setShowConfirm] = useState(false);
   const { users, setUsers } = useUsersValue();
   const { setSelectedUser } = useSelectedUserValue();
-
   const deleteProject = (id) => {
     console.log('delete...', id)
-      fetch(`http://localhost:5000/users/${id}`, {
+      fetch(`${config}/users/${id}`, {
           method: 'DELETE',
 
       }).then(response => response.json()).then(res => {

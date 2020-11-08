@@ -2,18 +2,17 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { makeEmail } from '../helpers';
 import { useUsersValue } from '../context';
-
+import config from '../config'
 export const AddUser = ({ shouldShow = false }) => {
     const [show, setShow] = useState(shouldShow);
     const [name, setName] = useState('');
 
     const mEmail = makeEmail();
     const { users, setUsers } = useUsersValue();
-
     const addUser = () => {
         console.log(mEmail)
         const email = `${mEmail}@gmail.com`
-        fetch('http://localhost:5000/users/create', {
+        fetch(`${config.userAPI}/users/create`, {
             method: 'POST',
             body: JSON.stringify({name, email}),
             headers: {
