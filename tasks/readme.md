@@ -20,7 +20,7 @@ Edit the `.env` file, and insert the following values:
 MONGO_URL
 AMQ
 ```
-Run the following commands in the project directory to install the api
+Run the following commands in the users directory to install the api
 
 `$ npm install`
 
@@ -31,10 +31,13 @@ visit http://localhost:5000 to consume the api
 ## Task service
 
 #### Task service installation
-In the tasks directory
+
+In the project directory
 Run
 
 `$ cd tasks`
+
+In the tasks directory
 
 `$ cp .env.example .env`
 
@@ -44,7 +47,7 @@ Edit the `.env` file, and insert the following values:
 MONGO_URL
 AMQ
 ```
-Run the following commands in the project directory to install the api
+Run the following commands in the tasks directory to install the api
 
 `$ npm install`
 
@@ -63,7 +66,7 @@ Run
 
 In the client directory run
 
-Run the following commands in the project directory to install the api
+Run the following commands in the client directory to install the UI 
 
 `$ npm install`
 
