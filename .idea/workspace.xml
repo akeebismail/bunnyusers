@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2abec813-e381-4e74-8b72-b91d8f29ac69" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/App.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/AddTask.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/AddUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Checkbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/IndividualTask.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/TaskDate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Tasks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/UserOverlay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/Content.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layout/Sidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/constants/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/selected-user-context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/users-context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/css/tailwind.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/helpers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/hooks/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/src/config/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/src/db/mongoose.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/src/express.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/src/middlewares/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/src/models/task.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/src/models/user.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/src/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/src/routes/tasks.route.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/src/services/queue_consumer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/src/validations/tasks.validation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/middlewares/authenticate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/routes/response.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/services/consumer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/src/validations/user.validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/users/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/users/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/users/src/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/mongoose.js" beforeDir="false" afterPath="$PROJECT_DIR$/users/src/db/mongoose.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/express.js" beforeDir="false" afterPath="$PROJECT_DIR$/users/src/express.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middlewares/authenticate.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middlewares/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/users/src/middlewares/validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/users/src/models/user.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/users/src/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/response.js" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/src/routes/response.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/user.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/users/src/routes/user.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/consumer.js" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/src/middlewares/authenticate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validations/user.validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/src/validations/user.validation.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jy468CPSQHECOpoiWz7hScTLjF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/users" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/users" />
+      <recent name="$PROJECT_DIR$/tasks" />
+      <recent name="$PROJECT_DIR$/client" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/users" />
+      <recent name="$PROJECT_DIR$/tasks" />
+      <recent name="$PROJECT_DIR$/src/services/queue" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2abec813-e381-4e74-8b72-b91d8f29ac69" name="Default Changelist" comment="" />
+      <created>1604762820552</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604762820552</updated>
+      <workItem from="1604762821762" duration="16092000" />
+      <workItem from="1604845517744" duration="4681000" />
+    </task>
+    <task id="LOCAL-00001" summary="mongoose statics">
+      <created>1604856519240</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604856519241</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mongoose statics" />
+    <option name="LAST_COMMIT_MESSAGE" value="mongoose statics" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="217" y="0" key="CommitChangelistDialog2" timestamp="1604856518638">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="217" y="0" key="CommitChangelistDialog2/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1604856518638" />
+    <state x="240" y="136" key="Vcs.Push.Dialog.v2" timestamp="1604856523118">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="240" y="136" key="Vcs.Push.Dialog.v2/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1604856523118" />
+  </component>
+</project>
