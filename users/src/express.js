@@ -14,6 +14,10 @@ app.use(bodyParser.urlencoded({limit: '50mb', verify: rawBodySaver, extended: fa
 app.use(cookieParser())
 app.use(cors())
 
+app.get('/', (req, res) => {
+    console.log('testing');
+    return res.send('Bunnystudio todo task')
+})
 app.get('/tests', (req, res) => {
     console.log('testing');
     return res.send('just testing...')
@@ -22,7 +26,8 @@ app.use(routes)
 
 const appServer = http.createServer(app)
 const initApp = () => {
-    appServer.listen(5000, (err) => {
+    const port = process.env.PORT || 5000
+    appServer.listen(port, (err) => {
         if (err) {
             console.log('Error starting app', err)
             process.exit(1)
