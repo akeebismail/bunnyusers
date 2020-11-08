@@ -1,6 +1,9 @@
 # BunnyStudio todo tasks
 Clone the project to a particular directory
 You  need to have a working  ^node on your machine.
+Mongo db must be installed on your system or use a cloud db visit https://mongodb.com to create one 
+RabbitMq is used for messaging queue you can either install one your system or visit https://www.cloudamqp.com/ to get one 
+
 
 ## User service
 
