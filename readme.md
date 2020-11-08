@@ -1,8 +1,10 @@
-# BunnyStudio todo | Todo 
+# BunnyStudio todo tasks
 Clone the project to a particular directory
 You  need to have a working  ^node on your machine.
 
-### User service
+## User service
+
+#### User service installation
 In the project directory
 Run
 `$ cd users`
@@ -17,7 +19,6 @@ Edit the `.env` file, and insert the following values:
 MONGO_URL
 AMQ
 ```
-# Installation
 Run the following commands in the project directory to install the api
 
 `$ npm install`
@@ -26,13 +27,12 @@ Run the following commands in the project directory to install the api
 
 visit http://localhost:5000 to consume the api
 
-### Task service
+## Task service
 
-In the project directory
+#### Task service installation
+In the tasks directory
 Run
 `$ cd tasks`
-
-In the tasks directory run
 
 `$ cp .env.example .env`
 
@@ -42,7 +42,6 @@ Edit the `.env` file, and insert the following values:
 MONGO_URL
 AMQ
 ```
-# Installation
 Run the following commands in the project directory to install the api
 
 `$ npm install`
@@ -51,7 +50,9 @@ Run the following commands in the project directory to install the api
 
 visit http://localhost:5001 to consume the api
 
-### todo UI
+## todo UI
+
+#### todo UI Installation
 In the project directory
 Run
 `$ cd client`
@@ -59,7 +60,6 @@ Run
 
 In the client directory run
 
-# Installation
 Run the following commands in the project directory to install the api
 
 `$ npm install`
