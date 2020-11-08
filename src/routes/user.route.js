@@ -8,24 +8,12 @@ const {createUserValidation, updateUserValidation} = require('../validations/use
 const amq = require('amqplib').connect(process.env.AMQ)
 router.post('/create', validate(createUserValidation),async (req, res) => {
     try {
-        const user = await User.createUser(req.body)
-       response.respond(res, {
+        const users = await User.createUser(req.body)
+       return response.respond(res, {
             success: true,
             message: 'user created successfully.',
-            data: user
+            data: users
         })
-        //Publish user create
-        amq.then(conn => {
-            return conn.createChannel();
-        }).then(channel => {
-            return channel.assertQueue(config.qName).then(ok => {
-
-                return channel.sendToQueue(config.qName, Buffer.from(JSON.stringify({
-                    action: 'user_created',
-                    data: user
-                })))
-            })
-        }).catch(console.warn)
     }catch (e) {
         console.log(e)
         return response.respondWithInternalError(res)
@@ -68,22 +56,12 @@ router.get('/:id', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
     try {
-        const user = await User.findOneAndDelete({_id: req.params.id}).exec()
-        //publish user deleted
-        amq.then(conn => {
-            return conn.createChannel();
-        }).then(channel => {
-            channel.assertQueue(config.qName).then(ok => {
-                channel.sendToQueue(config.qName, Buffer.from(JSON.stringify({
-                    action: 'user_deleted',
-                    data: user
-                })))
-            })
-        })
+        const users = await User.deleteUser(req.params.id)
         return response.respond(res,{
             status_code: 204,
             message: 'User deleted successfully',
-        }, 204)
+            data: users
+        }, 200)
     }catch (e) {
         console.log(e)
         return response.respondWithInternalError(res)
